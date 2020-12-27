@@ -6,12 +6,12 @@ target 'TodoList' do
   use_frameworks!
 
   # Pods for TodoList
-  #pod 'RealmSwift'
+  pod 'RealmSwift'
 
    # Latest release in CocoaPods
-   #pod 'SwipeCellKit'
+   pod 'SwipeCellKit'
    
-   #pod 'ChameleonFramework/Swift', :git => 'https://github.com/wowansm/Chameleon.git',
-  #    :branch => 'swift5'
+   pod 'ChameleonFramework/Swift', :git => 'https://github.com/wowansm/Chameleon.git',
+      :branch => 'swift5'
 
 end
