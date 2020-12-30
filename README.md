@@ -52,12 +52,10 @@
     <li>
       <a href="#getting-started">Começando</a>
       <ul>
-        <li><a href="#prerequisites">Pré requisitos</a></li>
+        <li><a href="#prerequisites">Pré Requisitos</a></li>
         <li><a href="#installation">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Uso</a></li>
-    <li><a href="#roadmap">Roteiro</a></li>
     <li><a href="#contact">Contato</a></li>
   </ol>
 </details>
@@ -82,7 +80,7 @@ Utilizei o repositório CHAMALEON para criar cores aleatorias de backgrounds das
   </tbody>
 </table>
 
-
+OBS: Este projeto foi construido como exercicio do curso de iOS da Dra [Angela Yu] (https://www.linkedin.com/in/angela-yu-963a584b/)
 
 
 ### Desenvolvido Com
@@ -99,7 +97,7 @@ Utilizei o repositório CHAMALEON para criar cores aleatorias de backgrounds das
 
 Baixar ou clonar o repositorio e executar no terminal pod install
 
-### Prerequisites
+### Pré Requisitos
 
 Ter o Xcode com Swift 5.3.1 instalado.
   
@@ -118,7 +116,7 @@ Ter o Xcode com Swift 5.3.1 instalado.
 
 
 <!-- CONTACT -->
-## Contact
+## Contato
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/victorvieiraveiga/TodoListRealm)
 
