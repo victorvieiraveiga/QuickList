@@ -78,7 +78,6 @@ Utilizei o repositório CHAMALEON para criar cores aleatorias de backgrounds das
       <td> <img src="images/todo2.png" height="300" width="170" /> </td>
       <td> <img src="images/todo3.png" height="300" width="170" /> </td>
       <td> <img src="images/todo4.png" height="300" width="170" /> </td>
-      <td> <img src="images/todo5.png" height="300" width="170" /> </td>
     </tr>
   </tbody>
 </table>
