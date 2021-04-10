@@ -412,7 +412,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victor.veiga.quicktasklist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victor.veiga.quicktasklist;
 				PRODUCT_NAME = "$(TARGET_NAME)";

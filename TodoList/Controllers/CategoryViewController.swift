@@ -16,13 +16,34 @@ import GoogleMobileAds
 
 class CategoryViewController: SwipeTableViewController {
     
+    @IBOutlet var viewADD: UIView!
+    
     let realm = try! Realm()
     var categories:  Results<Category>?
+    var viewAd : UIView = UIView()
+    
+    private let banner : GADBannerView = {
+        let banner = GADBannerView()
+        banner.adUnitID = "ca-app-pub-3940256099942544/2934735716" //teste
+        //ca-app-pub-6593854542748346/2381151644 //novo
+        //"ca-app-pub-6593854542748346/5020695807" //producao antigo
+        banner.load(GADRequest())
+        banner.backgroundColor = .secondarySystemBackground
+        return banner
+    } ()
+    
 
     private var interstitial: GADInterstitialAd?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        viewADD = UIView(frame: CGRect(x: 0, y: view.frame.size.height-50, width: view.frame.size.width, height: 50))
+       banner.rootViewController = self
+      
+        viewADD.addSubview(banner)
+       self.view.addSubview(viewADD)
         
         loadCategories()
         tableView.rowHeight = 120.0
@@ -63,8 +84,8 @@ class CategoryViewController: SwipeTableViewController {
         let request = GADRequest()
         // ca-app-pub-3940256099942544/1033173712 - TESTE
         //ca-app-pub-6593854542748346/9284448526 - Produção
-
-        GADInterstitialAd.load(withAdUnitID:"ca-app-pub-3940256099942544/1033173712",
+                                           
+        GADInterstitialAd.load(withAdUnitID:"ca-app-pub-6593854542748346/9284448526",
                                     request: request,
                           completionHandler: { [self] ad, error in
                             if let error = error {
@@ -75,10 +96,13 @@ class CategoryViewController: SwipeTableViewController {
                             interstitial?.fullScreenContentDelegate = self
                           }
         )
-        
-        
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        banner.frame = CGRect(x: 0, y: viewADD.frame.size.height-190, width: viewADD.frame.size.width, height: 50).integral
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         guard let navBar = navigationController?.navigationBar else {fatalError("Navigation Controller does not exist.")}
