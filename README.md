@@ -80,8 +80,6 @@ Utilizei o repositório CHAMALEON para criar cores aleatorias de backgrounds das
   </tbody>
 </table>
 
-OBS: Este projeto foi construido como exercicio do curso de iOS da Dra [Angela Yu] (https://www.linkedin.com/in/angela-yu-963a584b/)
-
 
 ### Desenvolvido Com
 
